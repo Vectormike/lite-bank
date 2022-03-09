@@ -1,8 +1,8 @@
 export interface IAccount {
   id?: number;
   accountNumber: string;
-  name: string;
-  balance: number;
+  user_id: number;
+  balance?: number;
   createdAt?: Date;
 }
 
@@ -12,8 +12,7 @@ export interface FundAccountRequest {
 }
 
 export interface TransferRequest {
-  senderAccountNumber: string; // sender's account number
-  recipientAccountNumber: string; // destination account number
+  accountNumber: string; // destination account number
   amount: number;
 }
 
