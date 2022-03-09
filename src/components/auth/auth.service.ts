@@ -12,7 +12,6 @@ import { knex } from '../../config/database';
 import { UserShape } from '../user/user.model';
 import Randomstring from 'randomstring';
 import logger from '../../logger';
-import { transaction } from 'objection';
 
 export class AuthService {
   frontendBaseUrl: string = env.getBackendUrl();
