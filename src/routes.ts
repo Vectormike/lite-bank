@@ -1,16 +1,16 @@
 import { Router } from 'express';
 import { authRouter } from './components/auth';
-import { fileRouter } from './components/file';
+import { accountRouter } from './components/account';
 
 const router = Router();
 
 router.get('/', (req, res) => {
   return res.status(200).send({
-    message: 'Risevest, hire me 🙂',
+    message: 'Live 🙂',
   });
 });
 
 router.use('/api/auth', authRouter);
-router.use('/api/file', fileRouter);
+router.use('/api/account', accountRouter);
 
 export default router;
