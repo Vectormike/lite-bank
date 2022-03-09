@@ -4,7 +4,7 @@ import { Model, ModelObject } from 'objection';
 export class Transaction extends Model {
   id!: number;
   account_id: number;
-  operation: string; // deposit, transfer
+  operation: string; // deposit, transfer, withdrawal
   reference: string;
   balance_before: number;
   balance_after: number;
