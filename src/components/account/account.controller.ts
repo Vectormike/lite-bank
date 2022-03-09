@@ -13,13 +13,10 @@ export function AccountControllerFactory(accountService: AccountService): IAccou
   return {
     async fundAccount(req: Request, res: Response, next: NextFunction): Promise<any> {
       try {
-        const { user } = req;
-        const uploadedFile = await accountService.fundAccount();
-        logger.info(JSON.stringify(uploadedFile));
+        const account = await accountService.fundAccount(req.body);
+        logger.info(JSON.stringify(account));
         return res.status(httpStatus.OK).json({
-          message: 'File successfully uploaded',
-          status: 'success',
-          statusCode: httpStatus.CREATED,
+          data: account,
         });
       } catch (error) {
         logger.info(JSON.stringify(error));
@@ -29,13 +26,11 @@ export function AccountControllerFactory(accountService: AccountService): IAccou
 
     async transferFund(req: Request, res: Response, next: NextFunction): Promise<any> {
       try {
-        const { user, body,params:{id}, } = req;
-        const uploadedFile = await accountService.transferFund();
-        logger.info(JSON.stringify(uploadedFile));
+        const { user, body } = req;
+        const account = await accountService.transferFund(body, { currentUser: user });
+        logger.info(JSON.stringify(account));
         return res.status(httpStatus.OK).json({
-          message: 'File successfully uploaded',
-          status: 'success',
-          statusCode: httpStatus.CREATED,
+          data: account,
         });
       } catch (error) {
         logger.info(JSON.stringify(error));
@@ -45,23 +40,16 @@ export function AccountControllerFactory(accountService: AccountService): IAccou
 
     async withdrawFund(req: Request, res: Response, next: NextFunction): Promise<any> {
       try {
-        const {
-          user,
-          params: { id },
-        } = req;
-        const fileInstance = await accountService.withdrawFund(id, { currentUser: user });
-        logger.info(JSON.stringify(fileInstance));
+        const { user, body } = req;
+        const account = await accountService.withdrawFund(body, { currentUser: user });
+        logger.info(JSON.stringify(account));
         return res.status(httpStatus.OK).json({
-          message: 'File successfully uploaded',
-          status: 'success',
-          statusCode: httpStatus.CREATED,
-          data: fileInstance,
+          data: account,
         });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
-
-    
+  };
 }
