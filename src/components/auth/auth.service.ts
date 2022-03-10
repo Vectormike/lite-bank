@@ -6,7 +6,7 @@ import { UserService } from '../user/user.service';
 import { TokenService } from '../token/token.service';
 import { AccountService } from '../account/account.service';
 import { UserType } from '../user/user.type';
-import { ChangePasswordInput, CreateUserAccountInput, LoginInput } from './auth.input';
+import { ChangePasswordInput, CreateUserAccountInput, LoginInput } from './auth.interface';
 import { LoggedInType } from './auth.type';
 import { knex } from '../../config/database';
 import { UserShape } from '../user/user.model';
@@ -30,7 +30,6 @@ export class AuthService {
     const payload = {
       id: user.id,
       email: user.email,
-      role: user.role,
       date: Date.now(),
     };
     return jwt.sign(payload, this.JWT_AUTH_SECRET, { expiresIn: '1d' });
@@ -45,7 +44,6 @@ export class AuthService {
     const payload = {
       id: user.id,
       email: user.email,
-      role: user.role,
       date: Date.now(),
     };
 
@@ -67,7 +65,7 @@ export class AuthService {
     return {
       id: user.id,
       email: user.email,
-      role: user.role,
+      // accountNumber: user.accountNumber,
       token,
       refreshToken,
     };
@@ -105,6 +103,7 @@ export class AuthService {
 
       return {
         email: user.email,
+        accountNumber,
       };
     } catch (error) {
       logger.info(JSON.stringify(error));

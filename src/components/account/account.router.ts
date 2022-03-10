@@ -7,9 +7,9 @@ export function AccountRouter(options: ComponentRouterOptions<IAccountController
   const { controller, guards, validator } = options;
   const router = Router();
 
-  router.post('/deposit', guards.AuthGuard({ strict: true }), validator.FundAccountValidator.validate, controller.fundAccount);
-  router.post('/transfer', guards.AuthGuard({ strict: true }), validator.TransferFundValidator.validate, controller.transferFund);
-  router.post('/withdraw', guards.AuthGuard({ strict: true }), validator.WithdrawFundValidator.validate, controller.withdrawFund);
+  router.post('/deposit', guards.AuthGuard({ strict: true }), controller.fundAccount);
+  router.post('/transfer', guards.AuthGuard({ strict: true }), controller.transferFund);
+  router.post('/withdraw', guards.AuthGuard({ strict: true }), controller.withdrawFund);
 
   return router;
 }
