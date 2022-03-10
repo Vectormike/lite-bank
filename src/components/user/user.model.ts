@@ -4,7 +4,6 @@ export class User extends Model {
   id!: number;
   email!: string;
   password!: string;
-  role!: string;
   createdAt!: Date;
   updatedAt!: Date;
 
@@ -22,11 +21,11 @@ export class User extends Model {
 
   static get relationMappings() {
     return {
-      user: {
+      account: {
         relation: Model.HasOneRelation,
         modelClass: User,
         join: {
-          from: 'account.user_id',
+          from: 'account.accountNumber',
           to: 'users.id',
         },
       },

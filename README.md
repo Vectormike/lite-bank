@@ -1,6 +1,6 @@
-# API
+# Lendsqr API
 
-This application allows you to register, login, upload and download files, mark files as safe and unsafe.
+This application allows you to create an account while being able to deposit, transfer and withdraw from it.
 
 # STEPS TO RUN APP
 

@@ -2,6 +2,7 @@ export class UserType {
   readonly id?: number;
   email?: string;
   password?: string;
+  accountNumber: string;
   lastLoggedIn?: string | null;
   createdAt?: Date;
   updatedAt?: Date;

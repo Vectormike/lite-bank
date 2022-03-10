@@ -4,7 +4,7 @@ import { BadRequestError, NotFoundError, ForbiddenError } from '../../errors';
 import * as randomstring from 'randomstring';
 import env from '../../helpers/env';
 import { UserShape, User } from './user.model';
-import { CreateUserInput } from './user.input';
+import { CreateUserInput } from './user.interface';
 import { UserType, PreUserCreationProcessOutput } from './user.type';
 import { ServiceMethodOptions } from '../../shared/types/ServiceMethodOptions';
 

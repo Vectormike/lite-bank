@@ -1128,3 +1128,978 @@ info: Request🏷️: Feb-20-2022 23:29:54: [{"url":"https://res.cloudinary.com/
 info: Request🏷️: Feb-20-2022 23:29:54: ::1 - - [20/Feb/2022:22:29:54 +0000] "GET /api/file/file-history HTTP/1.1" 200 186 "-" "PostmanRuntime/7.29.0"
 
 info: Request🏷️: Feb-22-2022 16:39:21: Server server started at http://localhost:8000
+error: Request🏷️: Mar-10-2022 00:12:51: uncaughtException: Knex: run
+$ npm install pg --save
+Cannot find module 'pg'
+Require stack:
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/dialects/postgres/index.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/knex-builder/internal/config-resolver.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/knex-builder/Knex.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/index.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/knex.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/config/database.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/auth.service.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/index.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/routes.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/app.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/server.js
+Error: Knex: run
+$ npm install pg --save
+Cannot find module 'pg'
+Require stack:
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/dialects/postgres/index.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/knex-builder/internal/config-resolver.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/knex-builder/Knex.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/index.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/knex.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/config/database.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/auth.service.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/index.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/routes.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/app.js
+- /Users/macbookpro/Desktop/Projects/lendsqr/dist/src/server.js
+    at Client_PG.initializeDriver (/Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/client.js:182:13)
+    at new Client (/Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/client.js:71:12)
+    at new Client_PG (/Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/dialects/postgres/index.js:18:5)
+    at Object.knex [as default] (/Users/macbookpro/Desktop/Projects/lendsqr/node_modules/knex/lib/knex-builder/Knex.js:12:28)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/config/database.js:31:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+error: Request🏷️: Mar-10-2022 00:14:44: uncaughtException: Cannot read property 'FundAccountValidator' of undefined
+TypeError: Cannot read property 'FundAccountValidator' of undefined
+    at Object.AccountRouter (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/account.router.js:8:75)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/index.js:13:42)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/index.js:14:17)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+error: Request🏷️: Mar-10-2022 00:27:09: uncaughtException: Cannot read property 'FundAccountValidator' of undefined
+TypeError: Cannot read property 'FundAccountValidator' of undefined
+    at Object.AccountRouter (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/account.router.js:8:75)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/index.js:13:42)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/index.js:14:17)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+error: Request🏷️: Mar-10-2022 00:27:41: uncaughtException: Cannot read property 'FundAccountValidator' of undefined
+TypeError: Cannot read property 'FundAccountValidator' of undefined
+    at Object.AccountRouter (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/account.router.js:8:75)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/index.js:13:42)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/index.js:14:17)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+error: Request🏷️: Mar-10-2022 00:30:59: uncaughtException: Cannot read property 'FundAccountValidator' of undefined
+TypeError: Cannot read property 'FundAccountValidator' of undefined
+    at Object.AccountRouter (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/account.router.js:8:75)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/index.js:13:42)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/index.js:14:17)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+error: Request🏷️: Mar-10-2022 00:33:53: uncaughtException: Cannot read property 'TransferFundValidator' of undefined
+TypeError: Cannot read property 'TransferFundValidator' of undefined
+    at Object.AccountRouter (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/account.router.js:9:76)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/index.js:13:42)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/index.js:14:17)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+error: Request🏷️: Mar-10-2022 00:51:44: uncaughtException: Cannot read property 'TransferFundValidator' of undefined
+TypeError: Cannot read property 'TransferFundValidator' of undefined
+    at Object.AccountRouter (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/account.router.js:9:40)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/account/index.js:13:42)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/lendsqr/dist/src/components/auth/index.js:14:17)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+info: Request🏷️: Mar-10-2022 00:52:06: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 00:54:55: validation error
+info: Request🏷️: Mar-10-2022 00:54:55: Role is required
+info: Request🏷️: Mar-10-2022 00:54:55: request>>{"email":"victorjonah199@gmail.com","password":"Redeemer"}
+info: Request🏷️: Mar-10-2022 00:54:55: ::1 - - [09/Mar/2022:23:54:55 +0000] "POST /api/auth/register HTTP/1.1" 400 149 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 00:56:28: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 00:57:01: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.users' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 00:57:01: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.users' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 00:57:01: request>>{"email":"victorjonah199@gmail.com","password":"Redeemer"}
+info: Request🏷️: Mar-10-2022 00:57:01: ::1 - - [09/Mar/2022:23:57:01 +0000] "POST /api/auth/register HTTP/1.1" 500 379 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 01:01:39: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 01:03:18: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 08:42:35: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.users' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 08:42:35: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.users' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 08:42:35: request>>{"email":"victorjonah199@gmail.com","password":"Redeemer"}
+info: Request🏷️: Mar-10-2022 08:42:36: ::1 - - [10/Mar/2022:07:42:36 +0000] "POST /api/auth/register HTTP/1.1" 500 379 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 08:43:26: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 08:54:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 09:06:13: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 09:06:16: ::1 - - [10/Mar/2022:08:06:16 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 09:06:29: ::1 - - [10/Mar/2022:08:06:29 +0000] "POST /api/auth/login HTTP/1.1" 200 576 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 09:16:55: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 09:17:08: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 09:17:08: ::1 - - [10/Mar/2022:08:17:08 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:00:34: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:00:34: ::1 - - [10/Mar/2022:17:00:34 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:02:17: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:03:21: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:03:22: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:03:22: ::1 - - [10/Mar/2022:17:03:22 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:04:28: ::1 - - [10/Mar/2022:17:04:28 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:07:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:07:56: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:08:03: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:08:03: ::1 - - [10/Mar/2022:17:08:03 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:12:17: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:12:35: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:12:55: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:13:12: Account does not exist
+info: Request🏷️: Mar-10-2022 18:13:12: {"message":"Account does not exist","status":"Not Found","statusCode":404}
+info: Request🏷️: Mar-10-2022 18:13:12: {"success":false,"error":"Internal server error"}
+info: Request🏷️: Mar-10-2022 18:13:12: ::1 - - [10/Mar/2022:17:13:12 +0000] "POST /api/account/deposit HTTP/1.1" 200 58 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:13:39: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:13:54: ::1 - - [10/Mar/2022:17:13:54 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:14:03: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:14:03: ::1 - - [10/Mar/2022:17:14:03 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:14:41: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:14:52: ::1 - - [10/Mar/2022:17:14:52 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:15:02: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:15:02: ::1 - - [10/Mar/2022:17:15:02 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:16:09: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:17:02: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:17:14: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:18:31: ::1 - - [10/Mar/2022:17:18:31 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:18:39: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'balance' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 18:18:39: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 18:18:39: ::1 - - [10/Mar/2022:17:18:39 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:18:55: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:19:38: ::1 - - [10/Mar/2022:17:19:38 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:19:46: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'balance' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 18:19:46: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 18:19:46: ::1 - - [10/Mar/2022:17:19:46 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:20:51: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:20:54: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'balance' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 18:20:54: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 18:20:54: ::1 - - [10/Mar/2022:17:20:54 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:21:09: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'balance' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 18:21:09: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 18:21:09: ::1 - - [10/Mar/2022:17:21:09 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:21:39: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:22:13: Account does not exist
+info: Request🏷️: Mar-10-2022 18:22:13: {"message":"Account does not exist","status":"Not Found","statusCode":404}
+info: Request🏷️: Mar-10-2022 18:22:13: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 18:22:13: ::1 - - [10/Mar/2022:17:22:13 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:22:14: Account does not exist
+info: Request🏷️: Mar-10-2022 18:22:14: {"message":"Account does not exist","status":"Not Found","statusCode":404}
+info: Request🏷️: Mar-10-2022 18:22:14: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 18:22:14: ::1 - - [10/Mar/2022:17:22:14 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:22:25: ::1 - - [10/Mar/2022:17:22:25 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:22:33: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:22:33: ::1 - - [10/Mar/2022:17:22:33 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:23:13: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:23:13: ::1 - - [10/Mar/2022:17:23:13 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:23:45: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:23:45: ::1 - - [10/Mar/2022:17:23:45 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:32:08: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:33:36: ::1 - - [10/Mar/2022:17:33:36 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:33:46: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:33:46: ::1 - - [10/Mar/2022:17:33:46 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:34:32: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:34:55: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:35:00: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:35:00: ::1 - - [10/Mar/2022:17:35:00 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:36:15: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:36:24: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:36:24: ::1 - - [10/Mar/2022:17:36:24 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:36:43: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:36:44: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:36:44: ::1 - - [10/Mar/2022:17:36:44 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:36:52: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:36:52: ::1 - - [10/Mar/2022:17:36:52 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:36:52: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:36:52: ::1 - - [10/Mar/2022:17:36:52 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:36:53: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:36:53: ::1 - - [10/Mar/2022:17:36:53 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:37:18: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:37:18: ::1 - - [10/Mar/2022:17:37:18 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:54:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:54:39: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:55:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:55:41: ::1 - - [10/Mar/2022:17:55:41 +0000] "POST /api/auth/register HTTP/1.1" 201 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:55:47: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:55:47: ::1 - - [10/Mar/2022:17:55:47 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:56:27: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:56:27: ::1 - - [10/Mar/2022:17:56:27 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:57:12: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:57:13: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:57:13: ::1 - - [10/Mar/2022:17:57:13 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 18:59:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 18:59:05: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 18:59:05: ::1 - - [10/Mar/2022:17:59:05 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:19:35: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 19:19:54: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 19:19:54: ::1 - - [10/Mar/2022:18:19:54 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:21:29: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 19:21:30: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 19:21:30: ::1 - - [10/Mar/2022:18:21:30 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:21:39: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 19:21:39: ::1 - - [10/Mar/2022:18:21:39 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:32:26: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 19:32:31: {}
+info: Request🏷️: Mar-10-2022 19:32:31: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 19:32:31: ::1 - - [10/Mar/2022:18:32:31 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:32:44: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 19:32:54: {}
+info: Request🏷️: Mar-10-2022 19:32:54: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 19:32:54: ::1 - - [10/Mar/2022:18:32:54 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:32:55: {}
+info: Request🏷️: Mar-10-2022 19:32:55: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 19:32:55: ::1 - - [10/Mar/2022:18:32:55 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:33:00: {}
+info: Request🏷️: Mar-10-2022 19:33:00: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 19:33:00: ::1 - - [10/Mar/2022:18:33:00 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:33:31: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 19:33:38: {}
+info: Request🏷️: Mar-10-2022 19:33:38: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 19:33:38: ::1 - - [10/Mar/2022:18:33:38 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:34:18: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 19:34:26: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 19:34:26: ::1 - - [10/Mar/2022:18:34:26 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:35:51: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 19:35:52: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 19:35:52: ::1 - - [10/Mar/2022:18:35:52 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:36:10: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 19:36:10: ::1 - - [10/Mar/2022:18:36:10 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:36:16: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 19:36:16: ::1 - - [10/Mar/2022:18:36:16 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:36:32: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 19:37:01: request>>{"accountNumber":"7605896008","amount":1000}
+info: Request🏷️: Mar-10-2022 19:37:01: ::1 - - [10/Mar/2022:18:37:01 +0000] "POST /api/account/transfer HTTP/1.1" 401 189 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:37:19: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'balance' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 19:37:19: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 19:37:19: ::1 - - [10/Mar/2022:18:37:19 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:37:54: ::1 - - [10/Mar/2022:18:37:54 +0000] "POST /api/auth/register HTTP/1.1" 201 158 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:38:01: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'balance' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 19:38:01: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 19:38:01: ::1 - - [10/Mar/2022:18:38:01 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:38:13: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'balance' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 19:38:13: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 19:38:13: ::1 - - [10/Mar/2022:18:38:13 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 19:38:29: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'balance' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 19:38:29: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 19:38:29: ::1 - - [10/Mar/2022:18:38:29 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:08:46: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:09:41: {}
+info: Request🏷️: Mar-10-2022 20:09:42: {}
+info: Request🏷️: Mar-10-2022 20:09:42: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:09:42: ::1 - - [10/Mar/2022:19:09:42 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:10:31: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:11:21: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:11:21: {}
+info: Request🏷️: Mar-10-2022 20:11:21: {}
+info: Request🏷️: Mar-10-2022 20:11:21: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:11:21: ::1 - - [10/Mar/2022:19:11:21 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:11:33: {}
+info: Request🏷️: Mar-10-2022 20:11:33: {}
+info: Request🏷️: Mar-10-2022 20:11:33: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:11:33: ::1 - - [10/Mar/2022:19:11:33 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:11:34: {}
+info: Request🏷️: Mar-10-2022 20:11:34: {}
+info: Request🏷️: Mar-10-2022 20:11:34: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:11:34: ::1 - - [10/Mar/2022:19:11:34 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:11:35: {}
+info: Request🏷️: Mar-10-2022 20:11:35: {}
+info: Request🏷️: Mar-10-2022 20:11:35: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:11:35: ::1 - - [10/Mar/2022:19:11:35 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:12:52: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:13:00: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:13:42: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:14:13: {}
+info: Request🏷️: Mar-10-2022 20:14:13: {}
+info: Request🏷️: Mar-10-2022 20:14:13: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:14:13: ::1 - - [10/Mar/2022:19:14:13 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:14:14: {}
+info: Request🏷️: Mar-10-2022 20:14:14: {}
+info: Request🏷️: Mar-10-2022 20:14:14: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:14:14: ::1 - - [10/Mar/2022:19:14:14 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:14:52: {}
+info: Request🏷️: Mar-10-2022 20:14:52: {}
+info: Request🏷️: Mar-10-2022 20:14:52: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:14:52: ::1 - - [10/Mar/2022:19:14:52 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:15:51: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:15:52: {}
+info: Request🏷️: Mar-10-2022 20:15:52: {}
+info: Request🏷️: Mar-10-2022 20:15:52: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:15:52: ::1 - - [10/Mar/2022:19:15:52 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:16:14: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:16:16: {}
+info: Request🏷️: Mar-10-2022 20:16:16: {}
+info: Request🏷️: Mar-10-2022 20:16:16: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:16:16: ::1 - - [10/Mar/2022:19:16:16 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:16:17: {}
+info: Request🏷️: Mar-10-2022 20:16:17: {}
+info: Request🏷️: Mar-10-2022 20:16:17: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:16:17: ::1 - - [10/Mar/2022:19:16:17 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:19:20: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:19:50: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:19:54: {}
+info: Request🏷️: Mar-10-2022 20:19:54: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:19:54: ::1 - - [10/Mar/2022:19:19:54 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:20:18: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:20:33: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:20:35: {}
+info: Request🏷️: Mar-10-2022 20:20:35: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:20:35: ::1 - - [10/Mar/2022:19:20:35 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:21:29: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:21:30: {}
+info: Request🏷️: Mar-10-2022 20:21:30: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:21:30: ::1 - - [10/Mar/2022:19:21:30 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:22:18: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:22:20: {}
+info: Request🏷️: Mar-10-2022 20:22:20: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:22:20: ::1 - - [10/Mar/2022:19:22:20 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:22:33: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:22:36: {}
+info: Request🏷️: Mar-10-2022 20:22:36: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:22:36: ::1 - - [10/Mar/2022:19:22:36 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:22:54: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:22:54: {}
+info: Request🏷️: Mar-10-2022 20:22:54: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:22:54: ::1 - - [10/Mar/2022:19:22:54 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:24:22: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:24:23: {}
+info: Request🏷️: Mar-10-2022 20:24:23: {}
+info: Request🏷️: Mar-10-2022 20:24:23: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:24:23: ::1 - - [10/Mar/2022:19:24:23 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:24:56: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:25:06: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:25:07: {}
+info: Request🏷️: Mar-10-2022 20:25:07: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:25:07: ::1 - - [10/Mar/2022:19:25:07 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:25:26: {}
+info: Request🏷️: Mar-10-2022 20:25:26: {}
+info: Request🏷️: Mar-10-2022 20:25:26: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:25:26: ::1 - - [10/Mar/2022:19:25:26 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:25:34: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:25:36: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:26:47: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:26:58: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:27:01: {}
+info: Request🏷️: Mar-10-2022 20:27:01: {}
+info: Request🏷️: Mar-10-2022 20:27:01: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 20:27:01: ::1 - - [10/Mar/2022:19:27:01 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:27:49: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:27:50: {}
+info: Request🏷️: Mar-10-2022 20:27:50: {}
+info: Request🏷️: Mar-10-2022 20:27:50: undefined
+info: Request🏷️: Mar-10-2022 20:27:50: ::1 - - [10/Mar/2022:19:27:50 +0000] "POST /api/account/transfer HTTP/1.1" 200 2 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:28:18: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:28:19: {}
+info: Request🏷️: Mar-10-2022 20:28:19: {}
+info: Request🏷️: Mar-10-2022 20:28:19: {}
+info: Request🏷️: Mar-10-2022 20:28:19: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:28:19: ::1 - - [10/Mar/2022:19:28:19 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:28:58: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:28:59: {}
+info: Request🏷️: Mar-10-2022 20:28:59: {}
+info: Request🏷️: Mar-10-2022 20:28:59: {}
+info: Request🏷️: Mar-10-2022 20:28:59: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:28:59: ::1 - - [10/Mar/2022:19:28:59 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:29:24: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:29:24: {}
+info: Request🏷️: Mar-10-2022 20:29:25: {}
+info: Request🏷️: Mar-10-2022 20:29:25: {}
+info: Request🏷️: Mar-10-2022 20:29:25: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:29:25: ::1 - - [10/Mar/2022:19:29:25 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:30:10: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:30:11: {}
+info: Request🏷️: Mar-10-2022 20:30:11: {}
+info: Request🏷️: Mar-10-2022 20:30:11: {}
+info: Request🏷️: Mar-10-2022 20:30:11: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:30:11: ::1 - - [10/Mar/2022:19:30:11 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:30:26: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:30:28: {}
+info: Request🏷️: Mar-10-2022 20:30:29: {}
+info: Request🏷️: Mar-10-2022 20:30:29: {}
+info: Request🏷️: Mar-10-2022 20:30:29: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:30:29: ::1 - - [10/Mar/2022:19:30:29 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:31:11: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:31:11: {}
+info: Request🏷️: Mar-10-2022 20:31:11: {}
+info: Request🏷️: Mar-10-2022 20:31:11: {}
+info: Request🏷️: Mar-10-2022 20:31:11: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:31:11: ::1 - - [10/Mar/2022:19:31:11 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:31:46: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:32:06: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:32:09: {}
+info: Request🏷️: Mar-10-2022 20:32:09: {}
+info: Request🏷️: Mar-10-2022 20:32:09: {}
+info: Request🏷️: Mar-10-2022 20:32:09: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:32:09: ::1 - - [10/Mar/2022:19:32:09 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:33:07: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:33:14: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:33:17: {}
+info: Request🏷️: Mar-10-2022 20:33:17: {}
+info: Request🏷️: Mar-10-2022 20:33:17: {}
+info: Request🏷️: Mar-10-2022 20:33:17: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:33:17: ::1 - - [10/Mar/2022:19:33:17 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:33:45: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:33:46: {}
+info: Request🏷️: Mar-10-2022 20:33:46: {}
+info: Request🏷️: Mar-10-2022 20:33:46: {}
+info: Request🏷️: Mar-10-2022 20:33:46: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:33:46: ::1 - - [10/Mar/2022:19:33:46 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:33:57: {}
+info: Request🏷️: Mar-10-2022 20:33:57: {}
+info: Request🏷️: Mar-10-2022 20:33:57: {}
+info: Request🏷️: Mar-10-2022 20:33:57: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:33:57: ::1 - - [10/Mar/2022:19:33:57 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:34:23: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:35:00: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:35:00: {}
+info: Request🏷️: Mar-10-2022 20:35:00: {}
+info: Request🏷️: Mar-10-2022 20:35:00: {}
+info: Request🏷️: Mar-10-2022 20:35:00: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:35:00: ::1 - - [10/Mar/2022:19:35:00 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:35:16: {}
+info: Request🏷️: Mar-10-2022 20:35:16: {}
+info: Request🏷️: Mar-10-2022 20:35:16: {}
+info: Request🏷️: Mar-10-2022 20:35:16: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:35:16: ::1 - - [10/Mar/2022:19:35:16 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:35:30: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:35:32: {}
+info: Request🏷️: Mar-10-2022 20:35:32: {}
+info: Request🏷️: Mar-10-2022 20:35:32: {}
+info: Request🏷️: Mar-10-2022 20:35:32: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:35:32: ::1 - - [10/Mar/2022:19:35:32 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:35:57: {}
+info: Request🏷️: Mar-10-2022 20:35:57: {}
+info: Request🏷️: Mar-10-2022 20:35:57: {}
+info: Request🏷️: Mar-10-2022 20:35:57: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:35:57: ::1 - - [10/Mar/2022:19:35:57 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:36:28: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:36:29: {}
+info: Request🏷️: Mar-10-2022 20:36:29: {}
+info: Request🏷️: Mar-10-2022 20:36:29: {}
+info: Request🏷️: Mar-10-2022 20:36:29: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:36:29: ::1 - - [10/Mar/2022:19:36:29 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:37:29: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:37:56: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:37:56: {}
+info: Request🏷️: Mar-10-2022 20:37:56: {}
+info: Request🏷️: Mar-10-2022 20:37:56: {}
+info: Request🏷️: Mar-10-2022 20:37:56: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:37:56: ::1 - - [10/Mar/2022:19:37:56 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:37:57: {}
+info: Request🏷️: Mar-10-2022 20:37:57: {}
+info: Request🏷️: Mar-10-2022 20:37:57: {}
+info: Request🏷️: Mar-10-2022 20:37:57: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:37:57: ::1 - - [10/Mar/2022:19:37:57 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:38:18: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:38:19: {}
+info: Request🏷️: Mar-10-2022 20:38:19: {}
+info: Request🏷️: Mar-10-2022 20:38:19: {}
+info: Request🏷️: Mar-10-2022 20:38:19: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:38:19: ::1 - - [10/Mar/2022:19:38:19 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:38:46: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:38:56: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:39:20: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:39:21: {}
+info: Request🏷️: Mar-10-2022 20:39:21: {}
+info: Request🏷️: Mar-10-2022 20:39:21: {}
+info: Request🏷️: Mar-10-2022 20:39:21: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:39:21: ::1 - - [10/Mar/2022:19:39:21 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:40:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:40:07: {}
+info: Request🏷️: Mar-10-2022 20:40:07: {}
+info: Request🏷️: Mar-10-2022 20:40:07: {}
+info: Request🏷️: Mar-10-2022 20:40:07: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:40:07: ::1 - - [10/Mar/2022:19:40:07 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:40:20: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:40:21: {}
+info: Request🏷️: Mar-10-2022 20:40:22: {}
+info: Request🏷️: Mar-10-2022 20:40:22: {}
+info: Request🏷️: Mar-10-2022 20:40:22: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:40:22: ::1 - - [10/Mar/2022:19:40:22 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:40:55: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:40:56: {}
+info: Request🏷️: Mar-10-2022 20:40:57: {}
+info: Request🏷️: Mar-10-2022 20:40:57: {}
+info: Request🏷️: Mar-10-2022 20:40:57: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:40:57: ::1 - - [10/Mar/2022:19:40:57 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:42:30: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:42:33: {}
+info: Request🏷️: Mar-10-2022 20:42:33: {}
+info: Request🏷️: Mar-10-2022 20:42:33: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:42:33: ::1 - - [10/Mar/2022:19:42:33 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:42:47: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:43:05: {}
+info: Request🏷️: Mar-10-2022 20:43:05: {}
+info: Request🏷️: Mar-10-2022 20:43:05: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:43:05: ::1 - - [10/Mar/2022:19:43:05 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:43:38: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:43:42: {}
+info: Request🏷️: Mar-10-2022 20:43:42: {}
+info: Request🏷️: Mar-10-2022 20:43:42: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:43:42: ::1 - - [10/Mar/2022:19:43:42 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:44:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:44:20: {}
+info: Request🏷️: Mar-10-2022 20:44:20: {}
+info: Request🏷️: Mar-10-2022 20:44:20: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:44:20: ::1 - - [10/Mar/2022:19:44:20 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:45:26: {}
+info: Request🏷️: Mar-10-2022 20:45:26: {}
+info: Request🏷️: Mar-10-2022 20:45:26: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:45:26: ::1 - - [10/Mar/2022:19:45:26 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:45:28: {}
+info: Request🏷️: Mar-10-2022 20:45:28: {}
+info: Request🏷️: Mar-10-2022 20:45:28: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:45:28: ::1 - - [10/Mar/2022:19:45:28 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:46:09: {}
+info: Request🏷️: Mar-10-2022 20:46:09: {}
+info: Request🏷️: Mar-10-2022 20:46:09: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:46:09: ::1 - - [10/Mar/2022:19:46:09 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:46:45: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:46:46: {}
+info: Request🏷️: Mar-10-2022 20:46:46: {}
+info: Request🏷️: Mar-10-2022 20:46:46: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:46:46: ::1 - - [10/Mar/2022:19:46:46 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:47:09: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:47:12: {}
+info: Request🏷️: Mar-10-2022 20:47:12: {}
+info: Request🏷️: Mar-10-2022 20:47:12: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:47:12: ::1 - - [10/Mar/2022:19:47:12 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:47:36: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:47:43: {}
+info: Request🏷️: Mar-10-2022 20:47:43: {}
+info: Request🏷️: Mar-10-2022 20:47:43: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:47:43: ::1 - - [10/Mar/2022:19:47:43 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:48:12: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:52:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:52:10: {}
+info: Request🏷️: Mar-10-2022 20:52:10: {}
+info: Request🏷️: Mar-10-2022 20:52:10: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:52:10: ::1 - - [10/Mar/2022:19:52:10 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:53:01: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:53:01: {}
+info: Request🏷️: Mar-10-2022 20:53:01: {}
+info: Request🏷️: Mar-10-2022 20:53:01: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:53:01: ::1 - - [10/Mar/2022:19:53:01 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 20:59:52: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 20:59:53: {}
+info: Request🏷️: Mar-10-2022 20:59:53: {}
+info: Request🏷️: Mar-10-2022 20:59:53: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 20:59:53: ::1 - - [10/Mar/2022:19:59:53 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:00:14: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:00:17: {}
+info: Request🏷️: Mar-10-2022 21:00:17: {}
+info: Request🏷️: Mar-10-2022 21:00:17: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 21:00:17: ::1 - - [10/Mar/2022:20:00:17 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:09:01: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:09:45: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:09:52: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 21:09:52: ::1 - - [10/Mar/2022:20:09:52 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:10:23: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 21:10:23: ::1 - - [10/Mar/2022:20:10:23 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:11:07: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:11:09: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 21:11:09: ::1 - - [10/Mar/2022:20:11:09 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:11:20: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 21:11:20: ::1 - - [10/Mar/2022:20:11:20 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:11:38: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 21:11:38: ::1 - - [10/Mar/2022:20:11:38 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:11:46: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 21:11:46: ::1 - - [10/Mar/2022:20:11:46 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:12:18: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 21:12:18: ::1 - - [10/Mar/2022:20:12:18 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:12:24: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 21:12:24: ::1 - - [10/Mar/2022:20:12:24 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:13:47: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:16:22: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:16:25: {}
+info: Request🏷️: Mar-10-2022 21:16:25: {}
+info: Request🏷️: Mar-10-2022 21:16:25: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 21:16:25: ::1 - - [10/Mar/2022:20:16:25 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:39:12: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:41:04: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 21:41:04: ::1 - - [10/Mar/2022:20:41:04 +0000] "POST /api/account/deposit/1 HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:50:22: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:50:37: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:50:42: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:52:38: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:52:42: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:52:44: Account does not exist
+info: Request🏷️: Mar-10-2022 21:52:44: {"message":"Account does not exist","status":"Not Found","statusCode":404}
+info: Request🏷️: Mar-10-2022 21:52:44: {}
+info: Request🏷️: Mar-10-2022 21:52:44: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 21:52:44: ::1 - - [10/Mar/2022:20:52:44 +0000] "POST /api/account/deposit/1 HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:52:57: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:53:05: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 21:53:05: {}
+info: Request🏷️: Mar-10-2022 21:53:05: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 21:53:05: ::1 - - [10/Mar/2022:20:53:05 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:53:08: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 21:53:08: {}
+info: Request🏷️: Mar-10-2022 21:53:08: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 21:53:08: ::1 - - [10/Mar/2022:20:53:08 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 21:53:22: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 21:53:22: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 21:53:22: {}
+info: Request🏷️: Mar-10-2022 21:53:22: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 21:53:22: ::1 - - [10/Mar/2022:20:53:22 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:12:07: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:12:23: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 22:12:23: {}
+info: Request🏷️: Mar-10-2022 22:12:23: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 22:12:23: ::1 - - [10/Mar/2022:21:12:23 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:13:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:13:14: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 22:13:14: {}
+info: Request🏷️: Mar-10-2022 22:13:14: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 22:13:14: ::1 - - [10/Mar/2022:21:13:14 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:13:49: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:13:51: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 22:13:51: {}
+info: Request🏷️: Mar-10-2022 22:13:51: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 22:13:51: ::1 - - [10/Mar/2022:21:13:51 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:14:28: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:14:30: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 22:14:30: {}
+info: Request🏷️: Mar-10-2022 22:14:30: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 22:14:30: ::1 - - [10/Mar/2022:21:14:30 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:14:45: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:14:49: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:14:52: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 22:14:52: {}
+info: Request🏷️: Mar-10-2022 22:14:52: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 22:14:52: ::1 - - [10/Mar/2022:21:14:52 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:15:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:15:04: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 22:15:04: {}
+info: Request🏷️: Mar-10-2022 22:15:04: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 22:15:04: ::1 - - [10/Mar/2022:21:15:04 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:15:22: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:15:24: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 22:15:24: {}
+info: Request🏷️: Mar-10-2022 22:15:24: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 22:15:24: ::1 - - [10/Mar/2022:21:15:24 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:15:27: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 22:15:27: {}
+info: Request🏷️: Mar-10-2022 22:15:27: {"success":false,"error":"Unable to deposit"}
+info: Request🏷️: Mar-10-2022 22:15:27: ::1 - - [10/Mar/2022:21:15:27 +0000] "POST /api/account/deposit HTTP/1.1" 200 54 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:16:21: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:16:22: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 22:16:22: ::1 - - [10/Mar/2022:21:16:22 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:17:14: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:18:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:18:07: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:18:24: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:18:24: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 22:18:24: ::1 - - [10/Mar/2022:21:18:24 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:18:38: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 22:18:38: ::1 - - [10/Mar/2022:21:18:38 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:19:17: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 22:19:17: ::1 - - [10/Mar/2022:21:19:17 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:20:01: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:20:06: request>>{"accountNumber":"7605896008","amount":1000}
+info: Request🏷️: Mar-10-2022 22:20:06: ::1 - - [10/Mar/2022:21:20:06 +0000] "POST /api/account/withdraw HTTP/1.1" 401 189 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:20:21: {"success":true,"message":"Withdrawal successful"}
+info: Request🏷️: Mar-10-2022 22:20:21: ::1 - - [10/Mar/2022:21:20:21 +0000] "POST /api/account/withdraw HTTP/1.1" 200 59 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:20:37: {"success":true,"message":"Withdrawal successful"}
+info: Request🏷️: Mar-10-2022 22:20:37: ::1 - - [10/Mar/2022:21:20:37 +0000] "POST /api/account/withdraw HTTP/1.1" 200 59 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:20:47: {"success":true,"message":"Withdrawal successful"}
+info: Request🏷️: Mar-10-2022 22:20:47: ::1 - - [10/Mar/2022:21:20:47 +0000] "POST /api/account/withdraw HTTP/1.1" 200 59 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:21:00: {"success":true,"message":"Withdrawal successful"}
+info: Request🏷️: Mar-10-2022 22:21:00: ::1 - - [10/Mar/2022:21:21:00 +0000] "POST /api/account/withdraw HTTP/1.1" 200 59 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:21:13: {}
+info: Request🏷️: Mar-10-2022 22:21:13: {}
+info: Request🏷️: Mar-10-2022 22:21:13: {}
+info: Request🏷️: Mar-10-2022 22:21:13: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 22:21:13: ::1 - - [10/Mar/2022:21:21:13 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:23:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:23:20: {"success":true,"message":"Withdrawal successful"}
+info: Request🏷️: Mar-10-2022 22:23:20: ::1 - - [10/Mar/2022:21:23:20 +0000] "POST /api/account/withdraw HTTP/1.1" 200 59 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:23:34: {}
+info: Request🏷️: Mar-10-2022 22:23:34: {}
+info: Request🏷️: Mar-10-2022 22:23:34: {}
+info: Request🏷️: Mar-10-2022 22:23:34: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 22:23:34: ::1 - - [10/Mar/2022:21:23:34 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:24:14: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:24:16: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:24:31: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:24:36: {}
+info: Request🏷️: Mar-10-2022 22:24:37: {}
+info: Request🏷️: Mar-10-2022 22:24:37: {}
+info: Request🏷️: Mar-10-2022 22:24:37: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 22:24:37: ::1 - - [10/Mar/2022:21:24:37 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:25:51: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:25:56: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:27:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:28:49: {}
+info: Request🏷️: Mar-10-2022 22:28:50: {}
+info: Request🏷️: Mar-10-2022 22:28:50: {}
+info: Request🏷️: Mar-10-2022 22:28:50: {"success":false,"error":"Unable to Transfer"}
+info: Request🏷️: Mar-10-2022 22:28:50: ::1 - - [10/Mar/2022:21:28:50 +0000] "POST /api/account/transfer HTTP/1.1" 200 55 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:29:49: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:30:36: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:31:46: {}
+info: Request🏷️: Mar-10-2022 22:31:46: "Unable to transfer..."
+info: Request🏷️: Mar-10-2022 22:31:46: {"success":false,"error":"Internal Server Error"}
+info: Request🏷️: Mar-10-2022 22:31:46: ::1 - - [10/Mar/2022:21:31:46 +0000] "POST /api/account/transfer HTTP/1.1" 200 58 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:32:35: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:32:37: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 22:32:37: ::1 - - [10/Mar/2022:21:32:37 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:33:15: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:33:17: "Unable to transfer..."
+info: Request🏷️: Mar-10-2022 22:33:17: {"success":false,"error":"Internal Server Error"}
+info: Request🏷️: Mar-10-2022 22:33:17: ::1 - - [10/Mar/2022:21:33:17 +0000] "POST /api/account/transfer HTTP/1.1" 200 58 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:33:46: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:33:47: "Unable to transfer..."
+info: Request🏷️: Mar-10-2022 22:33:47: {"success":false,"error":"Internal Server Error"}
+info: Request🏷️: Mar-10-2022 22:33:47: ::1 - - [10/Mar/2022:21:33:47 +0000] "POST /api/account/transfer HTTP/1.1" 200 58 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:34:15: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:34:15: "Unable to transfer..."
+info: Request🏷️: Mar-10-2022 22:34:15: {"success":false,"error":"Internal Server Error"}
+info: Request🏷️: Mar-10-2022 22:34:15: ::1 - - [10/Mar/2022:21:34:15 +0000] "POST /api/account/transfer HTTP/1.1" 200 58 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:34:33: "Unable to transfer..."
+info: Request🏷️: Mar-10-2022 22:34:33: {"success":false,"error":"Internal Server Error"}
+info: Request🏷️: Mar-10-2022 22:34:33: ::1 - - [10/Mar/2022:21:34:33 +0000] "POST /api/account/transfer HTTP/1.1" 200 58 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 22:40:38: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 22:40:39: "Unable to transfer..."
+info: Request🏷️: Mar-10-2022 22:40:39: {"success":false,"error":"Internal Server Error"}
+info: Request🏷️: Mar-10-2022 22:40:39: ::1 - - [10/Mar/2022:21:40:39 +0000] "POST /api/account/transfer HTTP/1.1" 200 58 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 23:00:39: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 23:17:54: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 23:18:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 23:18:26: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 23:18:26: ::1 - - [10/Mar/2022:22:18:26 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 23:18:36: {"success":true,"message":"Transfer successful"}
+info: Request🏷️: Mar-10-2022 23:18:36: ::1 - - [10/Mar/2022:22:18:36 +0000] "POST /api/account/transfer HTTP/1.1" 200 57 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 23:18:46: {"success":true,"message":"Deposit successful"}
+info: Request🏷️: Mar-10-2022 23:18:46: ::1 - - [10/Mar/2022:22:18:46 +0000] "POST /api/account/deposit HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 23:18:54: {"success":true,"message":"Withdrawal successful"}
+info: Request🏷️: Mar-10-2022 23:18:54: ::1 - - [10/Mar/2022:22:18:54 +0000] "POST /api/account/withdraw HTTP/1.1" 200 59 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-10-2022 23:22:06: Server server started at http://localhost:8000
+info: Request🏷️: Mar-10-2022 23:24:59: request>>{"accountNumber":"","amount":1000}
+info: Request🏷️: Mar-10-2022 23:24:59: ::ffff:127.0.0.1 - - [10/Mar/2022:22:24:59 +0000] "POST /api/account/deposit HTTP/1.1" 401 90 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:24:59: request>>{"accountNumber":"","amount":1000}
+info: Request🏷️: Mar-10-2022 23:24:59: ::ffff:127.0.0.1 - - [10/Mar/2022:22:24:59 +0000] "POST /api/account/transfer HTTP/1.1" 401 90 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:24:59: request>>{"accountNumber":"","amount":1000}
+info: Request🏷️: Mar-10-2022 23:24:59: ::ffff:127.0.0.1 - - [10/Mar/2022:22:24:59 +0000] "POST /api/account/withdraw HTTP/1.1" 401 90 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:25:01: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 23:25:01: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 23:25:01: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 23:25:01: request>>{"email":"victorjonah199@gmail.com","password":"Redeemer"}
+info: Request🏷️: Mar-10-2022 23:25:01: ::ffff:127.0.0.1 - - [10/Mar/2022:22:25:01 +0000] "POST /api/auth/register HTTP/1.1" 500 148 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:25:01: ::ffff:127.0.0.1 - - [10/Mar/2022:22:25:01 +0000] "POST /api/auth/login HTTP/1.1" 200 576 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:26:48: request>>{"accountNumber":"","amount":1000}
+info: Request🏷️: Mar-10-2022 23:26:48: ::ffff:127.0.0.1 - - [10/Mar/2022:22:26:48 +0000] "POST /api/account/deposit HTTP/1.1" 401 90 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:26:48: request>>{"accountNumber":"","amount":1000}
+info: Request🏷️: Mar-10-2022 23:26:48: ::ffff:127.0.0.1 - - [10/Mar/2022:22:26:48 +0000] "POST /api/account/transfer HTTP/1.1" 401 90 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:26:48: request>>{"accountNumber":"","amount":1000}
+info: Request🏷️: Mar-10-2022 23:26:48: ::ffff:127.0.0.1 - - [10/Mar/2022:22:26:48 +0000] "POST /api/account/withdraw HTTP/1.1" 401 90 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:26:49: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 23:26:49: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 23:26:49: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-10-2022 23:26:49: request>>{"email":"victorjonah199@gmail.com","password":"Redeemer"}
+info: Request🏷️: Mar-10-2022 23:26:49: ::ffff:127.0.0.1 - - [10/Mar/2022:22:26:49 +0000] "POST /api/auth/register HTTP/1.1" 500 148 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-10-2022 23:26:50: ::ffff:127.0.0.1 - - [10/Mar/2022:22:26:50 +0000] "POST /api/auth/login HTTP/1.1" 200 576 "-" "node-superagent/3.8.3"
+
