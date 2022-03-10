@@ -41,7 +41,7 @@ export function AccountControllerFactory(accountService: AccountService): IAccou
     async withdrawFund(req: Request, res: Response, next: NextFunction): Promise<any> {
       try {
         const { user, body } = req;
-        const account = await accountService.withdrawFund(body, { currentUser: user });
+        const account = await accountService.withdrawFund(body);
         logger.info(JSON.stringify(account));
         return res.status(httpStatus.OK).json({
           data: account,

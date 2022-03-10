@@ -2,20 +2,20 @@ import { BadRequestError, UnauthorizedError, NotFoundError, ForbiddenError } fro
 import { Account } from './account.model';
 import { ServiceMethodOptions } from '../../shared/types/ServiceMethodOptions';
 import logger from '../../logger';
-import { FundAccountRequest, IAccount, TransferRequest, WithdrawAccountRequest } from './account.input';
-import { knex } from 'config/database';
-import { Transaction } from 'components/transaction/transaction.model';
+import { FundAccountRequest, IAccount, TransferRequest, WithdrawAccountRequest } from './account.interface';
+import { Transaction } from '../../components/transaction/transaction.model';
 import { v4 } from 'uuid';
+import { knex } from '../../config/database';
 import { Knex } from 'knex';
-import { response } from 'express';
 
 export class AccountService {
   constructor(private readonly accountModel = Account, private readonly transactionModel = Transaction) {}
 
-  private async debitAccount(account_id: number, amount: number, reference: any, purpose: string, transaction: any) {
+  private async debitAccount(accountNumber: string, amount: number, reference: any, purpose: string, transaction: Knex.Transaction<any, any[]>) {
     try {
       // Check if account exists
-      const accountExists = await this.accountModel.query(transaction).findOne({ id: account_id });
+      const accountExists = await this.accountModel.query(transaction).findOne({ accountNumber: accountNumber });
+
       if (!accountExists) {
         logger.info('Account does not exist');
         throw new NotFoundError('Account does not exist');
@@ -29,7 +29,10 @@ export class AccountService {
         };
       }
 
-      await this.accountModel.query(transaction).update({ balance: -amount }).where({ id: account_id });
+      let newAmount: number;
+      newAmount = Number(accountExists.balance) - Number(amount);
+
+      await this.accountModel.query().patch({ balance: newAmount }).where({ id: accountExists.id });
 
       await this.transactionModel.query(transaction).insert({
         account_id: accountExists.id,
@@ -51,6 +54,49 @@ export class AccountService {
       return {
         success: false,
         error: 'Internal server error',
+      };
+    }
+  }
+
+  private async creditAccount(accountNumber: string, amount: number, transaction: Knex.Transaction<any, any[]>) {
+    const reference = v4();
+    const purpose = 'deposit';
+
+    try {
+      const accountExists = await this.accountModel.query().findOne({ accountNumber });
+      if (!accountExists) {
+        logger.info('Account does not exist');
+        throw new NotFoundError('Account does not exist');
+      }
+
+      let newAmount: number;
+      newAmount = Number(accountExists.balance) + Number(amount);
+
+      // Update balance
+      const resp = await this.accountModel.query(transaction).update({ balance: newAmount }).where({ id: accountExists.id });
+      console.log(resp);
+
+      // Create a transaction for this deposit
+      await this.transactionModel.query(transaction).insert({
+        account_id: accountExists.id,
+        operation: purpose,
+        reference,
+        balance_before: Number(accountExists.balance),
+        balance_after: Number(accountExists.balance) + Number(amount),
+      });
+
+      await transaction.commit();
+
+      return {
+        success: true,
+        message: 'Credit successful',
+      };
+    } catch (error) {
+      logger.info(JSON.stringify(error));
+      await transaction.rollback();
+      return {
+        success: false,
+        error: 'Internal Server Error',
       };
     }
   }
@@ -77,42 +123,26 @@ export class AccountService {
    */
   async fundAccount(body: FundAccountRequest): Promise<any> {
     const transaction = await knex.transaction();
-
     try {
-      const accountExists = await this.accountModel.query(transaction).findOne({ accountNumber: body.accountNumber });
-      if (!accountExists) {
-        logger.info('Account does not exist');
-        throw new NotFoundError('Account does not exist');
+      const creditResult = await this.creditAccount(body.accountNumber, body.amount, transaction);
+
+      console.log(creditResult);
+
+      if (creditResult.success === false) {
+        await transaction.rollback();
+        throw new Error();
       }
-
-      accountExists.balance += body.amount;
-      await this.accountModel
-        .query(transaction)
-        .update({
-          balance: ++body.amount,
-        })
-        .where({ id: accountExists.id });
-
-      await this.transactionModel.query(transaction).insert({
-        account_id: accountExists.id,
-        operation: 'deposit',
-        reference: v4(),
-        balance_before: Number(accountExists.balance),
-        balance_after: Number(accountExists.balance) + Number(body.amount),
-      });
-
-      await transaction.commit();
 
       return {
         success: true,
         message: 'Deposit successful',
       };
     } catch (error) {
-      logger.info(JSON.stringify(error));
+      logger.info(JSON.stringify('Unable to fund...', error));
       await transaction.rollback();
       return {
         success: false,
-        error: 'Internal server error',
+        error: 'Internal Server Error',
       };
     }
   }
@@ -122,17 +152,28 @@ export class AccountService {
    * @param {number} amount amount to deposit
    */
   async transferFund(body: TransferRequest, options?: ServiceMethodOptions): Promise<any> {
-    const transaction: Knex.Transaction = await knex.transaction();
+    const transaction = await knex.transaction();
+
     const reference = v4();
     const purpose = 'transfer';
     try {
-      const account = await this.accountModel.query(transaction).findOne({ user_id: options.currentUser.id });
-      const transferResponse = await Promise.all([this.debitAccount(account.id, body.amount, reference, purpose, transaction), this.fundAccount(body)]);
+      // Check if recipient's account exists
+      const accountExists = await this.accountModel.query(transaction).findOne({ accountNumber: body.senderAccountNumber });
+      if (!accountExists) {
+        logger.info('Account does not exist');
+        throw new NotFoundError('Account does not exist');
+      }
 
-      const failedTransaction = transferResponse.filter((response) => !response);
+      // Debit sender and credit recipient's account concurrently
+      const transferResponse = await Promise.all([
+        this.debitAccount(body.senderAccountNumber, body.amount, reference, purpose, transaction),
+        this.creditAccount(body.receiverAccountNumber, body.amount, transaction),
+      ]);
+
+      const failedTransaction = transferResponse.filter((response) => response.success === false);
       if (failedTransaction.length) {
         await transaction.rollback();
-        return;
+        throw new Error();
       }
 
       await transaction.commit();
@@ -142,11 +183,11 @@ export class AccountService {
         message: 'Transfer successful',
       };
     } catch (error) {
-      logger.info(JSON.stringify(error));
+      logger.info(JSON.stringify('Unable to transfer...', error));
       await transaction.rollback();
       return {
         success: false,
-        error: 'Unable to Transfer',
+        error: 'Internal Server Error',
       };
     }
   }
@@ -155,18 +196,12 @@ export class AccountService {
    * @param {number} account_number account_number of the account(User)
    * @param {number} amount amount to deposit
    */
-  async withdrawFund(body: WithdrawAccountRequest, options?: ServiceMethodOptions): Promise<any> {
+  async withdrawFund(body: WithdrawAccountRequest): Promise<any> {
     const transaction: Knex.Transaction = await knex.transaction();
     const reference = v4();
     const purpose = 'withdrawal';
     try {
-      // Get account ID
-      const account = await this.accountModel.query(transaction).findOne({ accountNumber: body.accountNumber });
-      if (!account) {
-        logger.info('Account does not exist');
-        throw new NotFoundError('Account does not exist');
-      }
-      const debitResponse = await this.debitAccount(account.id, body.amount, reference, purpose, transaction);
+      const debitResponse = await this.debitAccount(body.accountNumber, body.amount, reference, purpose, transaction);
       if (!debitResponse) {
         logger.info('Unable to withdraw');
         await transaction.rollback();
@@ -178,11 +213,11 @@ export class AccountService {
         message: 'Withdrawal successful',
       };
     } catch (error) {
-      logger.info(JSON.stringify(error));
+      logger.info(JSON.stringify('Unable to withdraw...', error));
       await transaction.rollback();
       return {
         success: false,
-        error: 'Unable to withdraw',
+        error: 'Internal Server Error',
       };
     }
   }
