@@ -1,21 +1,21 @@
 version: '3.8'
 services:
   db:
-    image: postgres:14.1-alpine
+    image: mysql:8.0
     restart: always
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - MYSQL_DATABASE=postgres
+      - MYSQL_USER=postgres
+      - MYSQL_PASSWORD
     ports:
-      - '5432:5432'
+      - '8889:8889'
     volumes: 
-      - db:/var/lib/postgresql/data
-      - ./db/init.sql:/docker-entrypoint-initdb.d/create_tables.sql
+      - my-db:/var/lib/mysql
   api:
-    container_name: risevest
+    container_name: lendsqr
     build:
       context: ./
-    image: risevest-api
+    image: lendsqr
     depends_on:
       - db
     ports:
@@ -23,10 +23,10 @@ services:
     environment:
       NODE_ENV: production
       DB_HOST: db
-      DB_PORT: 5432
-      DB_USER: postgres
-      DB_PASSWORD: postgres
-      DB_NAME: postgres
+      DB_PORT: 8889
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: lendsqr
     links:
       - db
     volumes:
