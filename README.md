@@ -9,8 +9,8 @@ If you would still prefer to do the installation manually, follow these steps:
 Clone the repo:
 
 ```bash
-git clone --depth 1 https://github.com/hagopj13/node-express-boilerplate.git
-cd node-express-boilerplate
+git clone --depth 1 https://github.com/Vectormike/lite-bank
+cd lite-bank
 
 ```
 
@@ -52,17 +52,13 @@ npm run serve
 Start up the containers
 
 ```
-
 docker-compose up -d on the root directory of the project
-
 ```
 
 Run Migration
 
 ```
-
 docker exec -t -i app knex migrate:latest
-
 ```
 
 ### Database schema
