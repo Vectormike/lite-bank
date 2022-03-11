@@ -8,8 +8,8 @@ export async function up(knex: Knex): Promise<void> {
     t.string('reference');
     t.decimal('balance_before', 20, 4).unsigned();
     t.decimal('balance_after', 20, 4).unsigned();
-    t.timestamp('createdAt').defaultTo(knex.fn.now());
-    t.timestamp('updatedAt').defaultTo(knex.fn.now());
+    t.timestamp('created_at').defaultTo(knex.fn.now());
+    t.timestamp('updated_at').defaultTo(knex.fn.now());
   });
 }
 

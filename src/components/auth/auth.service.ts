@@ -6,7 +6,7 @@ import { UserService } from '../user/user.service';
 import { TokenService } from '../token/token.service';
 import { AccountService } from '../account/account.service';
 import { UserType } from '../user/user.type';
-import { ChangePasswordInput, CreateUserAccountInput, LoginInput } from './auth.interface';
+import { CreateUserAccountInput, LoginInput } from './auth.interface';
 import { LoggedInType } from './auth.type';
 import { knex } from '../../config/database';
 import { UserShape } from '../user/user.model';
@@ -81,7 +81,6 @@ export class AuthService {
         {
           email: data.email,
           password: data.password,
-          role: data.role,
         },
         transaction
       );
