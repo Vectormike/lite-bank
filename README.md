@@ -46,7 +46,6 @@ Run in production
 
 ```
 npm run serve
-
 ```
 
 Start up the containers
