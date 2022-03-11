@@ -2119,3 +2119,19 @@ info: Request🏷️: Mar-11-2022 00:24:20: ::ffff:127.0.0.1 - - [10/Mar/2022:23
 
 info: Request🏷️: Mar-11-2022 00:24:20: ::ffff:127.0.0.1 - - [10/Mar/2022:23:24:20 +0000] "POST /api/auth/login HTTP/1.1" 200 576 "-" "node-superagent/3.8.3"
 
+info: Request🏷️: Mar-11-2022 01:51:07: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 01:51:07: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 01:51:07: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 01:51:07: request>>{"email":"victorjonah199@gmail.com","password":"Redeemer"}
+info: Request🏷️: Mar-11-2022 01:51:07: ::ffff:127.0.0.1 - - [11/Mar/2022:00:51:07 +0000] "POST /api/auth/register HTTP/1.1" 500 148 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-11-2022 01:51:08: ::ffff:127.0.0.1 - - [11/Mar/2022:00:51:08 +0000] "POST /api/auth/login HTTP/1.1" 200 576 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-11-2022 01:52:19: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 01:52:19: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 01:52:19: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lendsqr.accounts' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 01:52:19: request>>{"email":"victorjonah199@gmail.com","password":"Redeemer"}
+info: Request🏷️: Mar-11-2022 01:52:19: ::ffff:127.0.0.1 - - [11/Mar/2022:00:52:19 +0000] "POST /api/auth/register HTTP/1.1" 500 148 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-11-2022 01:52:19: ::ffff:127.0.0.1 - - [11/Mar/2022:00:52:19 +0000] "POST /api/auth/login HTTP/1.1" 200 576 "-" "node-superagent/3.8.3"
+
