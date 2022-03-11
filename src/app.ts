@@ -8,7 +8,6 @@ import ApplicationError from './errors/application-error';
 import routes from './routes';
 import { rateLimiter } from './middleware/limiter';
 import logger from './logger';
-import { client, redisClient } from './redis.connection';
 
 const cors = require('cors');
 require('./config/database');
